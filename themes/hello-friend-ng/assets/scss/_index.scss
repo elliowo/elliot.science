@@ -1,0 +1,177 @@
+.main-container {
+  display: block;
+  justify-content: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px;
+  background-color: #3B4252;
+  border: 1px solid #88C0D0;
+  border-radius: 5px;
+}
+
+.main-container b {
+  color: white;
+}
+
+.title h1 {
+  color: #88C0D0;
+  font-weight: bold;
+  font-size: 45px;
+  text-align: center;
+  margin: 0.67em 30px;
+}
+
+.main-container li {
+  font-size: 14px !important;
+}
+
+.title hr {
+  width: 80%;
+}
+
+.main-container h2, p, li {
+  color: #dadada;
+}
+
+.main-container li {
+  margin-bottom: 10px;
+}
+
+.main-container h2 {
+  text-align: left;
+  font-size: 25px;
+  color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.main-container p, li {
+  text-align: left;
+  font-size: 14px;
+}
+
+.main-container a {
+  text-align: left;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 14px;
+  color: white;
+}
+
+.i-button {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  border: 1px solid #81a1c1;
+  padding: 7px 10px 7px 10px;
+}
+
+.i-button:hover {
+  opacity: 0.75;
+  cursor: pointer;
+  border: 1px solid #81a1c1;
+  background-color: #5e81ac;
+}
+
+.left {
+  display: inline-block;
+  float: left;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  width: 45%;
+}
+
+.right {
+  display: inline-block;
+  float: right;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 45%;
+}
+
+.i-blog a {
+  color: #5e81ac;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.i-blog li {
+  margin-bottom: 1px;
+}
+
+.i-blog a:hover {
+  font-style: italic;
+  color: #ffffff;
+}
+
+.i-big-icon {
+  display: inline-block;
+  height: 1.8rem;
+  width: 1.8rem;
+  position: relative;
+  margin-right: 15px;
+}
+
+.i-small-icon {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  top: 3px;
+  position: relative;
+  margin-right: 10px;
+}
+
+.i-logo {
+  display: inline;
+  height: 50px;
+  width: 50px;
+  top: 3px;
+  position: relative;
+  margin-right: 10px;
+}
+
+.i-main:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.end-ring {
+  text-align: center;
+  margin: 0 20px 30px;
+}
+
+.end-ring a {
+  text-decoration: none;
+}
+
+.end-ring img {
+  width: 130px;
+  height: 40px;
+  margin-top: 10px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.end-ring hr {
+  width: 80%;
+}
+
+@media only screen and (max-width: 768px) {
+  .left {
+    width: 90%;
+    margin-left: 20px;
+    margin-bottom: 0;
+    margin-right: 20px;
+    display: inline-block;
+  }
+  .right {
+    float: left;
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+  }
+}

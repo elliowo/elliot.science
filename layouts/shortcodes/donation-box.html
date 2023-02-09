@@ -1,0 +1,12 @@
+<div class='donation'>
+        <span class="donation-icon" style="margin-right: 20px; max-width: {{- ( .Get 3 ) -}}">
+            {{- $fname:=print "/static/icons/" ( .Get 0 ) -}}
+            {{- $path:="<path" -}}
+            {{- $fill:="<path fill=\"#D092FC\"" -}}
+                              {{ replace (readFile $fname) $path $fill | safeHTML }}
+        </span>
+
+    <a href="{{- ( .Get 2 ) -}}">
+        {{- ( .Get 1 ) -}}
+    </a>
+</div>

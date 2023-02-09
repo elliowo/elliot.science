@@ -1,0 +1,51 @@
+baseURL = 'https://elliot.science'
+languageCode = 'en-gb'
+title = 'elliot.science'
+theme = 'hello-friend-ng'
+relativeURLs=true
+
+[blackfriday]
+hrefTargetBlank = true
+
+[author]
+	name = "elliot"
+
+[taxonomies]
+	tag = "tags"
+
+[menu]
+	[[menu.main]]
+		identifier = "articles"
+		name       = "ARTICLES"
+		url        = "/posts"
+	[[menu.main]]
+		identifier = "instances"
+		name       = "SERVICES"
+		url        = "/services"
+	[[menu.main]]
+		identifier = "source"
+		name       = "SOURCE"
+		url        = "https://github.com/elliowo"
+
+[markup.goldmark.renderer]
+    unsafe = true
+
+[Permalinks]
+    posts = "/posts/:filename/"
+
+[params]
+	data-theme="dark"
+	enableSharingButtons=false
+	[params.logo]
+        logoMark=" "
+		logoText="elliot.science"
+		path="/logos/fishzoo.png"
+		logoCursorDisabled = true
+
+    [params.footer]
+		rss = true
+		author = true
+
+      	bottomText = [
+		  "&#10084; "
+      	]

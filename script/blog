@@ -1,0 +1,51 @@
+#!/bin/sh
+
+# Editable variables. Change to your liking
+BLOG_PATH="$(dirname $(dirname $(realpath $0)))"
+[ -z $EDITOR ] && EDITOR="vim"
+
+# Edit a blog post. If given post does not exist, create one.
+edit() {
+	[ -z $1 ] && echo "You need to provide a blog title." && exit 1
+	POST_PATH="$BLOG_PATH/content/posts/${1}.md"
+	[ -f "$POST_PATH" ] && eval $EDITOR "$POST_PATH" && exit 0
+
+	cd "$BLOG_PATH"
+	hugo new "posts/${1}.md"
+	eval $EDITOR "$POST_PATH"
+}
+
+publish() {
+	cd "$BLOG_PATH"
+	rm -rf "public/"
+	hugo
+	# rsync script must be created manually
+	$HOME/.local/bin/sync-elpengu "$BLOG_PATH/public/" && echo "Site synced successfully" || echo "An error occured while syncing the site."
+}
+
+remove() {
+	[ -z $1 ] && echo "You need to provide a blog title." && exit 1
+	POST_PATH="$BLOG_PATH/content/posts/${1}.md"
+	[ ! -f "$POST_PATH" ] && echo "Post does not exist. Nothing to remove." && exit 1
+
+	[ ! -d "$BLOG_PATH/.trash" ] && mkdir -p "$BLOG_PATH/.trash" 
+	mv "$POST_PATH" "$BLOG_PATH/.trash/"
+	echo "Post successfully deleted. If you need to restore it, you can find it in $BLOG_PATH/.trash/${1}.md"
+}
+
+[ -z $1 ] && echo "Please choose between [edit | publish | remove]." && exit 1
+
+case $(echo $1 | tr '[:upper:]' '[:lower:]') in
+	"edit")
+		edit "$2"
+		;;
+	"publish")
+		publish
+		;;
+	"remove")
+		remove "$2"
+		;;
+	*)
+		echo "Invalid option. Please choose between [edit | publish | remove]." && exit 1
+		;;
+esac
