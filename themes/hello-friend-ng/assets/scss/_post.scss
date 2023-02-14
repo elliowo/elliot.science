@@ -1,55 +1,55 @@
 .post-box {
-  display: block;
-  justify-content: center;
-  width: 100%;
-  max-width: 1000px;
-  margin: 40px 0 0;
-  border: 1px solid #99ccff;
-  border-radius: 15px;
-  padding: 35px 35px 20px;
+    display: block;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px 0 0;
+    border: 1px solid #99ccff;
+    border-radius: 15px;
+    padding: 35px 35px 20px;
 }
 
 .post-box-title {
-  height: 70px;
-  vertical-align: middle;
-  list-style: none;
+    height: 70px;
+    vertical-align: middle;
+    list-style: none;
 }
 
 
 .post-box-title::-webkit-details-marker {
-  display:none;
+    display:none;
 }
 
 .post-box-title h2 {
-  display: inline-block;
-  margin-top: 0;
-  margin-bottom: 0;
-  vertical-align: middle;
-  font-size: 35px;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+    font-size: 35px;
 }
 
 .post-box hr {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .post-box-title:hover {
-  color: #D092FC
+    color: #D092FC
 }
 
 .post-box-title img {
-  display: inline-block;
-  width: 50px;
-  margin-right: 10px;
-  vertical-align: top;
+    display: inline-block;
+    width: 50px;
+    margin-right: 10px;
+    vertical-align: top;
 }
 
 .post-box-title p {
-  float: right;
-  margin-top: 10px;
+    float: right;
+    margin-top: 10px;
 }
 
 .content li {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 //.post-box details {
@@ -64,17 +64,17 @@
 //}
 
 @media only screen and (max-width: 900px) {
-  .post-box-title {
-    height: auto;
-    text-align: center;
-    justify-content: center;
-  }
-  .post-box-title p {
-    float: none;
-    clear: both;
-    margin-top:20px;
-  }
-  .post-box hr {
-    width: 0;
-  }
+    .post-box-title {
+	height: auto;
+	text-align: center;
+	justify-content: center;
+    }
+    .post-box-title p {
+	float: none;
+	clear: both;
+	margin-top:20px;
+    }
+    .post-box hr {
+	width: 0;
+    }
 }

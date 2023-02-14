@@ -1,26 +1,32 @@
 @charset "UTF-8";
 
 /* Light theme color */
-$light-background: #2E3440;
-$light-background-secondary: #3B4252;
-$light-background-header: #3B4252;
+$light-header: #88c0d0;
+$light-paragraph: #2e3440;
+$light-background: #e5e9f0;
+$light-background-secondary: #d8dee9;
+$light-background-header: #d8dee9;
 //$light-color: #a9a9b3;
-$light-color: #e6e6e6;
-$light-color-variant: white;
+$light-color: #2e3440;
+$light-color-variant: #3b4352;
 $light-color-secondary: #b3b3bd;
-$light-border-color: #4e4e57;
+$light-border-color: #2e3440;
 $light-table-color: #4e4e57;
+$light-color-hyperlink: #b48ead;
 
 /* Dark theme colors */
-$dark-background: #232425;
-$dark-background-secondary: #3b3d42;
-$dark-background-header: #1b1c1d;
+$dark-header: #88c0d0;
+$dark-paragraph: #d8dee9;
+$dark-background: #3b4252;
+$dark-background-secondary: #434c5e;
+$dark-background-header: #4c566a;
 //$dark-color: #a9a9b3;
-$dark-color: #e6e6e6;
+$dark-color: #eceff4;
 $dark-color-variant: white;
 $dark-color-secondary: #b3b3bd;
-$dark-border-color: #4e4e57;
-$dark-table-color: #4e4e57;
+$dark-border-color: #88c0d0;
+$dark-table-color: #88c0d0;
+$dark-color-hyperlink: #b48ead;
 
 $media-size-phone: "(max-width: 684px)";
 $media-size-tablet: "(max-width: 900px)";

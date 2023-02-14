@@ -24,7 +24,7 @@ hrefTargetBlank = true
 		url        = "/services"
 	[[menu.main]]
 		identifier = "source"
-		name       = "SOURCE"
+		name       = "GITHUB"
 		url        = "https://github.com/elliowo"
 
 [markup.goldmark.renderer]
@@ -47,5 +47,5 @@ hrefTargetBlank = true
 		author = true
 
       	bottomText = [
-		  "&#10084; "
+		  "&#10084;"
       	]
